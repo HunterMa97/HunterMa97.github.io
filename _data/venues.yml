@@ -1,9 +1,21 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
-  color: "#00369f"
+"Bioinformatics":
+  url: https://academic.oup.com/bioinformatics
+  color: "#b31b1b"
 
-"PhysRev":
-  url: https://journals.aps.org/
+"CVPR":
+  url: https://cvpr.thecvf.com/
+  color: "#b31b1b"
 
-"Vision":
-  color: "#009f36"
+"ICML":
+  url: https://icml.cc/
+  color: "#b31b1b"
+
+"ICLR":
+  url: https://iclr.cc/
+  color: "#b31b1b"
+
+"Preprint":
+  color: "#b31b1b"
+
+"Under Review":
+  color: "#b31b1b"

@@ -9,8 +9,8 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>University of Wisconsin-Madison</p>
-    <p><a href="mailto:hma232@wisc.edu">hma232@wisc.edu</a></p>
+    <p><a href="https://www.cs.wisc.edu/">University of Wisconsin-Madison</a></p>
+    <p><em>hma232@wisc.edu</em></p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -26,6 +26,6 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Hi, I'm Haotian, a final year Ph.D. student in Computer Science at the University of Wisconsin-Madison, where I am fortunate to be advised by Prof. Daifeng Wang. I received my bachelor's degree from SUSTech in 2021, supervised by Prof. Hu Xu. Before that, I had a wonderful internship at the John Hopcroft Center, where I learned a lot from Prof. Quanshi Zhang.
+Hi, I'm Haotian, a final year Ph.D. student in [Computer Science](https://www.cs.wisc.edu/) at the [University of Wisconsin-Madison](https://www.wisc.edu/), where I am fortunate to be advised by [Prof. Daifeng Wang](https://daifengwanglab.org/people/). I received my bachelor's degree from [SUSTech](https://sustech.edu.cn/en/) in 2021, supervised by [Prof. Hu Xu](https://scholar.google.com/citations?user=pE1e0rsAAAAJ&hl=en). Before that, I had a wonderful internship at the [John Hopcroft Center](https://jhc.sjtu.edu.cn/), where I learned a lot from [Prof. Quanshi Zhang](https://sjtu-xai-lab.github.io/).
 
 My research focuses on Explainable AI in the real world, with the goal of transforming deep learning from a "black box" into a reliable tool. To this end, I develop interpretable frameworks spanning deep learning theory and broader applications.

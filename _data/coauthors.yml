@@ -1,34 +1,67 @@
-"adams":
-  - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
-    url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
+"wang":
+  - firstname: ["Daifeng", "D."]
+    url: https://daifengwanglab.org/people/
 
-"podolsky":
-  - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
-    url: https://en.wikipedia.org/wiki/Boris_Podolsky
+"zhang":
+  - firstname: ["Quanshi", "Q."]
+    url: https://sjtu-xai-lab.github.io/
+  - firstname: ["Hao", "H."]
+    url: https://scholar.google.com/scholar?q=Hao+Zhang+Quanshi+Zhang
+  - firstname: ["Yinqing", "Y."]
+    url: https://scholar.google.com/scholar?q=Yinqing+Zhang+Haotian+Ma
+  - firstname: ["Yifan", "Y."]
+    url: https://scholar.google.com/scholar?q=Yifan+Zhang+Quanshi+Zhang
 
-"rosen":
-  - firstname: ["Nathan", "N."]
-    url: https://en.wikipedia.org/wiki/Nathan_Rosen
+"yang":
+  - firstname: ["Yu", "Y."]
+    url: https://scholar.google.com/scholar?q=Yu+Yang+Quanshi+Zhang
+  - firstname: ["Ruqi", "R."]
+    url: https://www.spectralbiology.org/team-profiles/ruqi-yang
 
-"bach":
-  - firstname: ["Johann Sebastian", "J. S."]
-    url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
+"wu":
+  - firstname: ["Ying Nian", "Yingnian", "Y. N."]
+    url: http://www.stat.ucla.edu/~ywu/
 
-  - firstname: ["Carl Philipp Emanuel", "C. P. E."]
-    url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
+"zhou":
+  - firstname: ["Fan", "F."]
+    url: https://scholar.google.com/scholar?q=Fan+Zhou+Haotian+Ma
 
-"przibram":
-  - firstname: ["Karl"]
-    url: https://link.springer.com/article/10.1007/s00016-019-00242-z
+"xiang":
+  - firstname: ["Liyao", "L."]
+    url: https://scholar.google.com/scholar?q=Liyao+Xiang+Quanshi+Zhang
 
-"schrodinger":
-  - firstname: ["Erwin"]
-    url: https://en.wikipedia.org/wiki/Erwin_Schr%C3%B6dinger
+"ren":
+  - firstname: ["Jie", "J."]
+    url: https://sjtu-xai-lab.github.io/
 
-"lorentz":
-  - firstname: ["Hendrik Antoon"]
-    url: https://en.wikipedia.org/wiki/Hendrik_Lorentz
+"ling":
+  - firstname: ["Zenan", "Z."]
+    url: https://scholar.google.com/scholar?q=Zenan+Ling+Quanshi+Zhang
 
-"planck":
-  - firstname: ["Max"]
-    url: https://en.wikipedia.org/wiki/Max_Planck
+"qiu":
+  - firstname: ["Robert C.", "Robert C", "Robert", "Caiming"]
+    url: https://english.seiee.sjtu.edu.cn/english/detail/386_1959.htm
+
+"zhu":
+  - firstname: ["Song-Chun", "Song Chun", "S. C."]
+    url: https://www.zhusongchun.net/
+
+"townsend":
+  - firstname: ["Philip", "Philip A.", "P.", "P. A."]
+    url: https://www.spectralbiology.org/team-profiles/phil-townsend
+
+"jiang":
+  - firstname: ["Chenkun", "C."]
+    url: https://scholar.google.com/scholar?q=Chenkun+Jiang+Haotian+Ma
+
+"chen":
+  - firstname: ["Kai", "K."]
+    url: https://scholar.google.com/scholar?q=Kai+Chen+Haotian+Ma
+
+"liu":
+  - firstname: ["Haiyuan", "H."]
+    url: https://scholar.google.com/scholar?q=Haiyuan+Liu+Haotian+Ma
+
+"mei":
+  - firstname: ["Ziye", "Z."]
+    url: https://scholar.google.com/scholar?q=Ziye+Mei+Haotian+Ma
