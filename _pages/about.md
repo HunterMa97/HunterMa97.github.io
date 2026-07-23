@@ -6,7 +6,7 @@ subtitle: Ph.D. student in Computer Science, University of Wisconsin-Madison
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: prof_pic.png
   image_circular: false # crops the image to make it circular
   more_info: >
     <p><a href="https://www.cs.wisc.edu/">University of Wisconsin-Madison</a></p>
