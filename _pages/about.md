@@ -12,11 +12,11 @@ profile:
     <p><a href="https://www.cs.wisc.edu/">University of Wisconsin-Madison</a></p>
     <p><em>hma232@wisc.edu</em></p>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false # selected papers are placed manually below to control section order
 social: true # includes social icons at the bottom of the page
 
 announcements:
-  enabled: true # includes a list of news items
+  enabled: false # news is placed manually below to control section order
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
   limit: 5 # leave blank to include all the news in the `_news` folder
 
@@ -40,6 +40,14 @@ I enjoy talking with people and working together. If you have an idea you would 
 
 - **University of Wisconsin-Madison**, Ph.D. in Computer Science, 2021-2027.
 - **Southern University of Science and Technology (SUSTech)**, B.S. in Physics, 2016-2021.
+
+## News
+
+{% include news.liquid limit=true %}
+
+## Selected Publications
+
+{% include selected_papers.liquid %}
 
 ## Life
 
