@@ -1,0 +1,31 @@
+<style>
+  :root,
+  html[data-theme="light"],
+  html[data-theme-setting="light"] {
+    --global-theme-color: #4aa3df !important;
+    --global-hover-color: #4aa3df !important;
+  }
+
+  html[data-theme="dark"],
+  html[data-theme-setting="dark"] {
+    --global-theme-color: #7cc7ff !important;
+    --global-hover-color: #7cc7ff !important;
+  }
+
+  a,
+  a:visited,
+  .post a,
+  .publications a,
+  .navbar .navbar-nav .nav-link.active,
+  .navbar .navbar-nav .nav-link:hover {
+    color: var(--global-theme-color) !important;
+  }
+
+  a:hover {
+    color: var(--global-hover-color) !important;
+  }
+
+  .publications abbr.badge div {
+    color: #ffffff !important;
+  }
+</style>
