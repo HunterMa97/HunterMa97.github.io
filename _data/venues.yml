@@ -14,8 +14,12 @@
   url: https://iclr.cc/
   color: "#b31b1b"
 
+"NeurIPS":
+  url: https://neurips.cc/
+  color: "#b31b1b"
+
 "Preprint":
   color: "#b31b1b"
 
 "Under Review":
-  color: "#b31b1b"
+  color: "#ffffff"

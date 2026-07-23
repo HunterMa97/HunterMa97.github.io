@@ -2,6 +2,14 @@
   - firstname: ["Daifeng", "D."]
     url: https://daifengwanglab.org/people/
 
+"roberts":
+  - firstname: ["Nicholas", "N."]
+    url: https://scholar.google.com/scholar?q=Nicholas+Roberts+AutoWS-Bench-101
+
+"li":
+  - firstname: ["Xintong", "X."]
+    url: https://scholar.google.com/scholar?q=Xintong+Li+AutoWS-Bench-101
+
 "zhang":
   - firstname: ["Quanshi", "Q."]
     url: https://sjtu-xai-lab.github.io/
@@ -25,6 +33,18 @@
 "zhou":
   - firstname: ["Fan", "F."]
     url: https://scholar.google.com/scholar?q=Fan+Zhou+Haotian+Ma
+
+"huang":
+  - firstname: ["Tzu-Heng", "Tzu Heng", "T. H."]
+    url: https://scholar.google.com/scholar?q=Tzu-Heng+Huang+AutoWS-Bench-101
+
+"adila":
+  - firstname: ["Dyah", "D."]
+    url: https://scholar.google.com/scholar?q=Dyah+Adila+AutoWS-Bench-101
+
+"schoenberg":
+  - firstname: ["Spencer", "S."]
+    url: https://scholar.google.com/scholar?q=Spencer+Schoenberg+AutoWS-Bench-101
 
 "xiang":
   - firstname: ["Liyao", "L."]
@@ -61,7 +81,21 @@
 "liu":
   - firstname: ["Haiyuan", "H."]
     url: https://scholar.google.com/scholar?q=Haiyuan+Liu+Haotian+Ma
+  - firstname: ["Cheng-Yu", "Cheng Yu", "C. Y."]
+    url: https://scholar.google.com/scholar?q=Cheng-Yu+Liu+AutoWS-Bench-101
 
 "mei":
   - firstname: ["Ziye", "Z."]
     url: https://scholar.google.com/scholar?q=Ziye+Mei+Haotian+Ma
+
+"pick":
+  - firstname: ["Lauren", "L."]
+    url: https://scholar.google.com/scholar?q=Lauren+Pick+AutoWS-Bench-101
+
+"albarghouthi":
+  - firstname: ["Aws", "A."]
+    url: https://pages.cs.wisc.edu/~aws/
+
+"sala":
+  - firstname: ["Frederic", "Fred", "F."]
+    url: https://pages.cs.wisc.edu/~fredsala/
