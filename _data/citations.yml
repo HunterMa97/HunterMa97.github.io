@@ -1,8 +1,8 @@
 metadata:
-  last_updated: '2026-07-27'
+  last_updated: '2026-08-10'
 papers:
   UMm3StwAAAAJ:2osOgNQ5qMEC:
-    citations: 18
+    citations: 16
     title: Visual graph mining for graph matching
     year: '2019'
   UMm3StwAAAAJ:5nxA0vEk-isC:
@@ -10,15 +10,15 @@ papers:
     title: 'SegJointGene: joint cell segmentation and spatial gene prioritization by information entropy guided convolutional neural networks'
     year: '2026'
   UMm3StwAAAAJ:8k81kl-MbHgC:
-    citations: 499
+    citations: 503
     title: Interpreting cnns via decision trees
     year: '2019'
   UMm3StwAAAAJ:9yKSN-GCB0IC:
-    citations: 24
+    citations: 23
     title: Quantification and Analysis of Layer-wise and Pixel-wise Information Discarding
     year: '2022'
   UMm3StwAAAAJ:Tyk-4Ss8FVUC:
-    citations: 11
+    citations: 12
     title: 'Autows-bench-101: Benchmarking automated weak supervision with 100 labels'
     year: '2022'
   UMm3StwAAAAJ:WF5omc3nYNoC:
@@ -30,6 +30,6 @@ papers:
     title: 'Explaining AlphaGo: Interpreting contextual effects in neural networks'
     year: '2019'
   UMm3StwAAAAJ:zYLM7Y9cAGgC:
-    citations: 47
+    citations: 46
     title: Interpretable complex-valued neural networks for privacy protection
     year: '2019'
