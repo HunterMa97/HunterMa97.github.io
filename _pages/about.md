@@ -148,6 +148,6 @@ search_exclude: true
   <div class="toast" id="toast">Copied to clipboard</div>
 
   <script src="/assets/landing/js/data.js?v=20260813-landing-4"></script>
-  <script src="/assets/landing/js/main.js?v=20260813-landing-4"></script>
+  <script src="/assets/landing/js/main-20260813-landing-4.js"></script>
 </body>
 </html>
