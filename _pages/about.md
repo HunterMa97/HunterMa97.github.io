@@ -17,7 +17,19 @@ search_exclude: true
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/assets/landing/css/style.css?v=20260813-landing-4" />
+  <link rel="stylesheet" href="/assets/landing/css/style.css?v=20260813-venue-colors" />
+  <style>
+    .venue-cvpr { background: rgba(30, 58, 138, 0.14); color: #1e3a8a; }
+    .venue-icml { background: rgba(234, 88, 12, 0.14); color: #c2410c; }
+    .venue-iclr { background: rgba(245, 158, 11, 0.18); color: #92400e; }
+    .venue-ismb { background: rgba(13, 148, 136, 0.14); color: #0f766e; }
+    .venue-neurips { background: rgba(249, 115, 22, 0.14); color: #c2410c; }
+    [data-theme="dark"] .venue-cvpr { background: rgba(96, 165, 250, 0.16); color: #93c5fd; }
+    [data-theme="dark"] .venue-icml { background: rgba(251, 113, 60, 0.16); color: #fb923c; }
+    [data-theme="dark"] .venue-iclr { background: rgba(250, 204, 21, 0.18); color: #facc15; }
+    [data-theme="dark"] .venue-ismb { background: rgba(45, 212, 191, 0.16); color: #2dd4bf; }
+    [data-theme="dark"] .venue-neurips { background: rgba(251, 146, 60, 0.16); color: #fdba74; }
+  </style>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='86'>H</text></svg>" />
 </head>
 <body>
