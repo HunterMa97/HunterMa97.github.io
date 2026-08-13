@@ -337,14 +337,14 @@ a:hover { text-decoration: underline; }
 .venue-icml { background: rgba(234, 88, 12, 0.14); color: #c2410c; }
 .venue-iclr { background: rgba(245, 158, 11, 0.18); color: #92400e; }
 .venue-ismb { background: rgba(13, 148, 136, 0.14); color: #0f766e; }
-.venue-neurips { background: rgba(249, 115, 22, 0.14); color: #c2410c; }
+.venue-neurips { background: rgba(220, 38, 38, 0.15); color: #991b1b; }
 .venue-preprint { background: rgba(107, 114, 128, 0.12); color: var(--muted); }
 [data-theme="dark"] .venue-bioinformatics { color: #6ee7b7; }
 [data-theme="dark"] .venue-cvpr { background: rgba(96, 165, 250, 0.16); color: #93c5fd; }
 [data-theme="dark"] .venue-icml { background: rgba(251, 113, 60, 0.16); color: #fb923c; }
 [data-theme="dark"] .venue-iclr { background: rgba(250, 204, 21, 0.18); color: #facc15; }
 [data-theme="dark"] .venue-ismb { background: rgba(45, 212, 191, 0.16); color: #2dd4bf; }
-[data-theme="dark"] .venue-neurips { background: rgba(251, 146, 60, 0.16); color: #fdba74; }
+[data-theme="dark"] .venue-neurips { background: rgba(248, 113, 113, 0.17); color: #fca5a5; }
 .pub-title { font-size: 1.08rem; line-height: 1.35; margin-bottom: 8px; }
 .pub-title a { color: var(--text); }
 .pub-title a:hover { color: var(--accent-2); }
