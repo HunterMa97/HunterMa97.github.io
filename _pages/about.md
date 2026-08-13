@@ -17,7 +17,7 @@ search_exclude: true
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/assets/landing/css/style.css?v=20260813-landing-3" />
+  <link rel="stylesheet" href="/assets/landing/css/style.css?v=20260813-landing-4" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='86'>H</text></svg>" />
 </head>
 <body>
@@ -121,7 +121,7 @@ search_exclude: true
           <div class="after-hours-card">
             <span class="mono">after hours</span>
             <strong>writing &middot; game design &middot; TV series</strong>
-            <p>Research asks how models reason. Stories ask how people do.</p>
+            <p>It's alsk about real people in the real world.</p>
           </div>
         </div>
       </div>
@@ -147,7 +147,7 @@ search_exclude: true
   <button class="back-to-top" id="backToTop" aria-label="Back to top"><svg class="btt-ring" viewBox="0 0 46 46" aria-hidden="true"><circle cx="23" cy="23" r="20"/></svg><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg></button>
   <div class="toast" id="toast">Copied to clipboard</div>
 
-  <script src="/assets/landing/js/data.js?v=20260813-landing-3"></script>
-  <script src="/assets/landing/js/main.js?v=20260813-landing-3"></script>
+  <script src="/assets/landing/js/data.js?v=20260813-landing-4"></script>
+  <script src="/assets/landing/js/main.js?v=20260813-landing-4"></script>
 </body>
 </html>

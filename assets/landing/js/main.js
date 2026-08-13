@@ -136,7 +136,7 @@ newsToggle?.addEventListener("click", () => {
 
 const pubFilters = document.getElementById("pubFilters");
 const pubSearch = document.getElementById("pubSearch");
-let activeFilter = "selected";
+let activeFilter = pubFilters?.querySelector(".filter-btn.active")?.dataset.filter || "selected";
 function applyPubFilters() {
   const q = deburr(pubSearch?.value || "");
   let shown = 0;
@@ -146,6 +146,7 @@ function applyPubFilters() {
     const matchesSearch = !q || card.dataset.search.includes(q);
     const visible = matchesFilter && matchesSearch;
     card.hidden = !visible;
+    card.style.display = visible ? "" : "none";
     if (visible) shown += 1;
   });
   const empty = document.getElementById("pubEmpty");
