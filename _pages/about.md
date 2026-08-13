@@ -23,12 +23,12 @@ search_exclude: true
     .venue-icml { background: rgba(234, 88, 12, 0.14); color: #c2410c; }
     .venue-iclr { background: rgba(245, 158, 11, 0.18); color: #92400e; }
     .venue-ismb { background: rgba(13, 148, 136, 0.14); color: #0f766e; }
-    .venue-neurips { background: rgba(249, 115, 22, 0.14); color: #c2410c; }
+    .venue-neurips { background: rgba(220, 38, 38, 0.15); color: #991b1b; }
     [data-theme="dark"] .venue-cvpr { background: rgba(96, 165, 250, 0.16); color: #93c5fd; }
     [data-theme="dark"] .venue-icml { background: rgba(251, 113, 60, 0.16); color: #fb923c; }
     [data-theme="dark"] .venue-iclr { background: rgba(250, 204, 21, 0.18); color: #facc15; }
     [data-theme="dark"] .venue-ismb { background: rgba(45, 212, 191, 0.16); color: #2dd4bf; }
-    [data-theme="dark"] .venue-neurips { background: rgba(251, 146, 60, 0.16); color: #fdba74; }
+    [data-theme="dark"] .venue-neurips { background: rgba(248, 113, 113, 0.17); color: #fca5a5; }
   </style>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='86'>H</text></svg>" />
 </head>
