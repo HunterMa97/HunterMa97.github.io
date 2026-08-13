@@ -16,15 +16,6 @@ const news = [
 
 const publications = [
   {
-    year: 2019,
-    badge: "preprint",
-    venueBadge: "Preprint",
-    tags: ["preprint"],
-    title: "Explaining AlphaGo: Interpreting Contextual Effects in Neural Networks",
-    authors: "Zenan Ling*, Haotian Ma*, Yu Yang, Robert C. Qiu, Song-Chun Zhu, Quanshi Zhang",
-    venueFull: "arXiv",
-  },
-  {
     year: 2026,
     badge: "ismb",
     venueBadge: "ISMB Poster",
@@ -77,6 +68,15 @@ const publications = [
     title: "Interpreting CNNs via Decision Trees",
     authors: "Quanshi Zhang, Yu Yang, Haotian Ma, Ying Nian Wu",
     venueFull: "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+  },
+  {
+    year: 2019,
+    badge: "preprint",
+    venueBadge: "Preprint",
+    tags: ["preprint"],
+    title: "Explaining AlphaGo: Interpreting Contextual Effects in Neural Networks",
+    authors: "Zenan Ling*, Haotian Ma*, Yu Yang, Robert C. Qiu, Song-Chun Zhu, Quanshi Zhang",
+    venueFull: "arXiv",
   },
 ];
 
