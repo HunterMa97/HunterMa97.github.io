@@ -64,7 +64,7 @@ search_exclude: true
           <h1 class="hero-name">Haotian Ma</h1>
           <p class="hero-lede reveal">I build interpretable frameworks for <span class="hl">Explainable AI in the real world</span>, from spatial transcriptomics to safer LLM deployment.</p>
           <p class="hero-bio reveal">
-            I am a final year Ph.D. student in Computer Science at UW-Madison, advised by Prof. Daifeng Wang. My work applies information theory, Shapley-based attribution, and sparse autoencoder analysis to make deep learning systems more reliable and interpretable.
+            I am a final year Ph.D. student in Computer Science at UW-Madison, advised by Prof. <a href="https://daifengwanglab.org/" target="_blank" rel="noopener">Daifeng Wang</a>. My work applies information theory, Shapley-based attribution, and sparse autoencoder analysis to make deep learning systems more reliable and interpretable.
           </p>
           <div class="hero-cta reveal">
             <a href="#publications" class="btn btn-primary">View Publications</a>
@@ -160,6 +160,24 @@ search_exclude: true
   <div class="toast" id="toast">Copied to clipboard</div>
 
   <script src="/assets/landing/js/data.js?v=20260813-landing-4"></script>
+  <script>
+    (() => {
+      const people = [
+        ["Daifeng Wang", "https://daifengwanglab.org/"],
+        ["Quanshi Zhang", "http://qszhang.com/"],
+        ["Frederic Sala", "https://pages.cs.wisc.edu/~fredsala/"],
+        ["Aws Albarghouthi", "https://pages.cs.wisc.edu/~aws/"],
+      ];
+      const linkPeople = (text) =>
+        people.reduce((html, [name, url]) => html.replaceAll(name, `<a href="${url}" target="_blank" rel="noopener">${name}</a>`), text);
+      publications.forEach((p) => {
+        p.authors = linkPeople(p.authors);
+      });
+      experience.forEach((item) => {
+        item.desc = linkPeople(item.desc);
+      });
+    })();
+  </script>
   <script src="/assets/landing/js/main-20260813-landing-4.js"></script>
 </body>
 </html>
