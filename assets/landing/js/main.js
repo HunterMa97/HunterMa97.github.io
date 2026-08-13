@@ -136,7 +136,7 @@ newsToggle?.addEventListener("click", () => {
 
 const pubFilters = document.getElementById("pubFilters");
 const pubSearch = document.getElementById("pubSearch");
-let activeFilter = "all";
+let activeFilter = "selected";
 function applyPubFilters() {
   const q = deburr(pubSearch?.value || "");
   let shown = 0;

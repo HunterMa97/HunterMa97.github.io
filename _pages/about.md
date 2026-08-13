@@ -17,7 +17,7 @@ search_exclude: true
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/assets/landing/css/style.css?v=20260813-landing" />
+  <link rel="stylesheet" href="/assets/landing/css/style.css?v=20260813-landing-3" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='86'>H</text></svg>" />
 </head>
 <body>
@@ -35,7 +35,6 @@ search_exclude: true
         <a href="#contact" class="nav-link">Contact</a>
       </nav>
       <div class="nav-actions">
-        <a href="/publications/" class="btn btn-small btn-outline">Full Publications</a>
         <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
           <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
           <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
@@ -80,13 +79,10 @@ search_exclude: true
     <section class="section" id="publications">
       <div class="container">
         <h2 class="section-title reveal">Publications</h2>
-        <p class="section-note reveal">Selected and public-facing work. Full BibTeX-style details remain available on the <a href="/publications/">publications page</a>.</p>
+        <p class="section-note reveal">Selected shows the focused set by default. Switch to All for the complete list.</p>
         <div class="pub-filters reveal" id="pubFilters">
-          <button class="filter-btn active" data-filter="all">All</button>
-          <button class="filter-btn" data-filter="selected">Selected</button>
-          <button class="filter-btn" data-filter="poster">ISMB Poster</button>
-          <button class="filter-btn" data-filter="preprint">Preprint</button>
-          <button class="filter-btn" data-filter="published">Published</button>
+          <button class="filter-btn active" data-filter="selected">Selected</button>
+          <button class="filter-btn" data-filter="all">All</button>
           <input type="search" id="pubSearch" class="pub-search" placeholder="Search title, venue, author..." aria-label="Search publications" />
         </div>
         <div class="pub-list" id="pubList"></div>
@@ -151,7 +147,7 @@ search_exclude: true
   <button class="back-to-top" id="backToTop" aria-label="Back to top"><svg class="btt-ring" viewBox="0 0 46 46" aria-hidden="true"><circle cx="23" cy="23" r="20"/></svg><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg></button>
   <div class="toast" id="toast">Copied to clipboard</div>
 
-  <script src="/assets/landing/js/data.js?v=20260813-landing"></script>
-  <script src="/assets/landing/js/main.js?v=20260813-landing"></script>
+  <script src="/assets/landing/js/data.js?v=20260813-landing-3"></script>
+  <script src="/assets/landing/js/main.js?v=20260813-landing-3"></script>
 </body>
 </html>
