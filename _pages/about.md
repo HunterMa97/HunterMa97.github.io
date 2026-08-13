@@ -47,7 +47,6 @@ search_exclude: true
 
   <main id="top">
     <section class="hero">
-      <canvas id="tokenCanvas" aria-hidden="true"></canvas>
       <div class="container hero-inner">
         <div class="hero-text">
           <p class="hero-kicker reveal">Ph.D. Student in Computer Science &middot; <a href="https://www.wisc.edu/" target="_blank" rel="noopener">University of Wisconsin-Madison</a></p>
@@ -67,7 +66,6 @@ search_exclude: true
           <figcaption>Explainable AI &middot; Spatial Transcriptomics &middot; LLM Interpretability</figcaption>
         </figure>
       </div>
-      <p class="hero-canvas-note reveal" aria-hidden="true">each dot is a token attending to its neighbors - click to add one, move the pointer to disturb the field</p>
       <a href="#news" class="scroll-hint" aria-label="Scroll down"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></a>
     </section>
 
@@ -86,7 +84,7 @@ search_exclude: true
         <div class="pub-filters reveal" id="pubFilters">
           <button class="filter-btn active" data-filter="all">All</button>
           <button class="filter-btn" data-filter="selected">Selected</button>
-          <button class="filter-btn" data-filter="working">Working</button>
+          <button class="filter-btn" data-filter="poster">ISMB Poster</button>
           <button class="filter-btn" data-filter="preprint">Preprint</button>
           <button class="filter-btn" data-filter="published">Published</button>
           <input type="search" id="pubSearch" class="pub-search" placeholder="Search title, venue, author..." aria-label="Search publications" />
@@ -134,7 +132,6 @@ search_exclude: true
     </section>
 
     <section class="section contact-section" id="contact">
-      <canvas id="contactCanvas" aria-hidden="true"></canvas>
       <div class="container contact-wrap reveal">
         <h2 class="section-title centered">Get in Touch</h2>
         <p class="contact-text">I enjoy talking with people and working together. If you have an idea to share, are looking for potential ways to collaborate, or would like to invite me to review, feel free to reach out.</p>

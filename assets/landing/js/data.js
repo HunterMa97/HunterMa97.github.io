@@ -22,16 +22,16 @@ const publications = [
     tags: ["preprint"],
     title: "Explaining AlphaGo: Interpreting Contextual Effects in Neural Networks",
     authors: "Zenan Ling*, Haotian Ma*, Yu Yang, Robert C. Qiu, Song-Chun Zhu, Quanshi Zhang",
-    venueFull: "Preprint, 2019",
+    venueFull: "arXiv",
   },
   {
     year: 2026,
-    badge: "working",
-    venueBadge: "Working",
-    tags: ["working"],
+    badge: "ismb",
+    venueBadge: "ISMB Poster",
+    tags: ["poster"],
     title: "Spatial phenotyping linking single cell genomics to disease pathology through joint deep representation learning",
     authors: "Chenfeng He, Haotian Ma, Pubudu Kumarage, Xuerou Li, Kalpana Hanthanan Arachchilage, Shuang Liu, Daifeng Wang",
-    venueFull: "Working paper, 2026",
+    venueFull: "ISMB Poster",
   },
   {
     year: 2026,
@@ -40,7 +40,7 @@ const publications = [
     tags: ["published", "selected"],
     title: "SegJointGene: Joint Cell Segmentation and Spatial Gene Prioritization by Information Entropy Guided Convolutional Neural Networks",
     authors: "Haotian Ma, Daifeng Wang",
-    venueFull: "Bioinformatics, Jul 2026",
+    venueFull: "Bioinformatics",
   },
   {
     year: 2022,
@@ -49,7 +49,7 @@ const publications = [
     tags: ["published", "selected"],
     title: "AutoWS-Bench-101: Benchmarking Automated Weak Supervision with 100 Labels",
     authors: "Nicholas Roberts, Xintong Li, Tzu-Heng Huang, Dyah Adila, Spencer Schoenberg, Cheng-Yu Liu, Lauren Pick, Haotian Ma, Aws Albarghouthi, Frederic Sala",
-    venueFull: "Advances in Neural Information Processing Systems, 2022",
+    venueFull: "Advances in Neural Information Processing Systems",
   },
   {
     year: 2022,
@@ -58,7 +58,7 @@ const publications = [
     tags: ["published", "selected"],
     title: "Quantification and Analysis of Layer-wise and Pixel-wise Information Discarding",
     authors: "Haotian Ma, Hao Zhang, Fan Zhou, Yinqing Zhang, Quanshi Zhang",
-    venueFull: "International Conference on Machine Learning, 2022",
+    venueFull: "International Conference on Machine Learning",
   },
   {
     year: 2020,
@@ -67,7 +67,7 @@ const publications = [
     tags: ["published", "selected"],
     title: "Interpretable Complex-Valued Neural Networks for Privacy Protection",
     authors: "Liyao Xiang, Hao Zhang, Haotian Ma, Yifan Zhang, Jie Ren, Quanshi Zhang",
-    venueFull: "International Conference on Learning Representations, 2020",
+    venueFull: "International Conference on Learning Representations",
   },
   {
     year: 2019,
@@ -76,7 +76,7 @@ const publications = [
     tags: ["published", "selected"],
     title: "Interpreting CNNs via Decision Trees",
     authors: "Quanshi Zhang, Yu Yang, Haotian Ma, Ying Nian Wu",
-    venueFull: "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition, 2019",
+    venueFull: "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition",
   },
 ];
 
@@ -87,12 +87,6 @@ const experience = [
     title: "Ph.D. in Computer Science",
     org: "University of Wisconsin-Madison",
     desc: "Advisor: Prof. Daifeng Wang. Research on explainable AI, spatial transcriptomics, and LLM interpretability.",
-  },
-  {
-    date: "Before UW-Madison",
-    title: "Research Collaborations",
-    org: "Daifeng Wang Lab, Aws Albarghouthi, Frederic Sala, and John Hopcroft Center",
-    desc: "Worked with mentors across explainability, weak supervision, and interpretable learning systems.",
   },
   {
     date: "2016 - 2021",
