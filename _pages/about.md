@@ -70,7 +70,10 @@ search_exclude: true
             Hi, I'm Haotian, a final year Ph.D. student in <a href="https://www.cs.wisc.edu/" target="_blank" rel="noopener">Computer Science</a> at the <a href="https://www.wisc.edu/" target="_blank" rel="noopener">University of Wisconsin-Madison</a>, where I am fortunate to be advised by Prof. <a href="https://daifengwanglab.org/" target="_blank" rel="noopener">Daifeng Wang</a>. Before joining Daifeng's Lab, I had a wonderful time with Prof. <a href="https://pages.cs.wisc.edu/~aws/" target="_blank" rel="noopener">Aws Albarghouthi</a> and Prof. <a href="https://pages.cs.wisc.edu/~fredsala/" target="_blank" rel="noopener">Frederic Sala</a>. I received my bachelor's degree from <a href="https://www.sustech.edu.cn/en/" target="_blank" rel="noopener">SUSTech</a> in 2021, supervised by Prof. <a href="https://www.sustech.edu.cn/zh/faculties/english-xu-hu.html" target="_blank" rel="noopener">Hu Xu</a>. Before that, I had a wonderful internship at the <a href="https://jhc.sjtu.edu.cn/" target="_blank" rel="noopener">John Hopcroft Center</a>, where I learned a lot from Prof. <a href="http://qszhang.com/" target="_blank" rel="noopener">Quanshi Zhang</a>.
           </p>
           <p class="hero-bio reveal">
-            My work applies information theory, Shapley-based attribution, and sparse autoencoder analysis to make deep learning systems more reliable and interpretable.
+            My goal is to explain AI in terms of features, particularly from the bottom up. I'm focusing on theoretical tools that can build faithful representations from deep neural networks. Based on that, I aim to identify and prioritize abstract concepts, with applications to structural reasoning, computational biology, and broad scientific discovery. I will keep sharing the latest progress.
+          </p>
+          <p class="hero-bio reveal">
+            More work, including blog posts, threads, and open source code, will be released together in October.
           </p>
           <div class="hero-cta reveal">
             <a href="#publications" class="btn btn-primary">View Publications</a>
