@@ -65,7 +65,7 @@ search_exclude: true
         <div class="hero-text">
           <p class="hero-kicker reveal">Ph.D. Student in Computer Science &middot; <a href="https://www.wisc.edu/" target="_blank" rel="noopener">University of Wisconsin-Madison</a></p>
           <h1 class="hero-name">Haotian Ma</h1>
-          <p class="hero-lede reveal">I build interpretable frameworks for <span class="hl">Explainable AI in the real world</span>, from spatial transcriptomics to safer LLM deployment.</p>
+          <p class="hero-lede reveal">Explain features through faithful representations and build abstract concepts from the bottom up.</p>
           <p class="hero-bio reveal">
             I am a final year Ph.D. student in Computer Science at UW-Madison, advised by Prof. <a href="https://daifengwanglab.org/" target="_blank" rel="noopener">Daifeng Wang</a>. My work applies information theory, Shapley-based attribution, and sparse autoencoder analysis to make deep learning systems more reliable and interpretable.
           </p>
