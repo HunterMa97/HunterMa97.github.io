@@ -30,10 +30,13 @@ search_exclude: true
     [data-theme="dark"] .venue-ismb { background: rgba(45, 212, 191, 0.16); color: #2dd4bf; }
     [data-theme="dark"] .venue-neurips { background: rgba(248, 113, 113, 0.17); color: #fca5a5; }
   </style>
-  <link rel="icon" href="/favicon.ico?v=20260823b" sizes="any" />
-  <link rel="shortcut icon" href="/favicon.ico?v=20260823b" />
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=20260823b" />
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=20260823b" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Ccircle%20cx%3D%2232%22%20cy%3D%2232%22%20r%3D%2230%22%20fill%3D%22%23ffffff%22%20stroke%3D%22%23111111%22%20stroke-width%3D%223%22/%3E%3Cpath%20d%3D%22M32%202a30%2030%200%200%201%200%2060%2015%2015%200%200%201%200-30%2015%2015%200%200%200%200-30z%22%20fill%3D%22%23111111%22/%3E%3Ccircle%20cx%3D%2232%22%20cy%3D%2217%22%20r%3D%2215%22%20fill%3D%22%23ffffff%22/%3E%3Ccircle%20cx%3D%2232%22%20cy%3D%2247%22%20r%3D%2215%22%20fill%3D%22%23111111%22/%3E%3Ccircle%20cx%3D%2232%22%20cy%3D%2217%22%20r%3D%225%22%20fill%3D%22%23111111%22/%3E%3Ccircle%20cx%3D%2232%22%20cy%3D%2247%22%20r%3D%225%22%20fill%3D%22%23ffffff%22/%3E%3C/svg%3E" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png?v=20260823-taiji3" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16.png?v=20260823-taiji3" />
+  <link rel="icon" href="/assets/img/favicon.ico?v=20260823-taiji3" sizes="any" />
+  <link rel="icon" type="image/svg+xml" href="/assets/img/taiji-favicon.svg?v=20260823-taiji3" />
+  <link rel="shortcut icon" href="/favicon.ico?v=20260823-taiji3" />
+  <link rel="apple-touch-icon" href="/assets/img/favicon-180.png?v=20260823-taiji3" />
 </head>
 <body>
   <div class="progress-bar" id="progressBar"></div>

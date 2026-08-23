@@ -7,6 +7,9 @@ on:
       - main
     paths:
       - "assets/**"
+      - "favicon.ico"
+      - "favicon.svg"
+      - "apple-touch-icon.png"
       - "**.bib"
       - "**.html"
       - "**.js"
@@ -34,6 +37,9 @@ on:
       - main
     paths:
       - "assets/**"
+      - "favicon.ico"
+      - "favicon.svg"
+      - "apple-touch-icon.png"
       - "**.bib"
       - "**.html"
       - "**.js"

@@ -203,7 +203,7 @@ kramdown:
       start_line: 1
 
 # Includes & excludes
-include: ["_pages"]
+include: ["_pages", "favicon.ico", "favicon.svg", "apple-touch-icon.png"]
 exclude:
   - al-folio-upgrade-report.md
   - bin/
