@@ -30,7 +30,10 @@ search_exclude: true
     [data-theme="dark"] .venue-ismb { background: rgba(45, 212, 191, 0.16); color: #2dd4bf; }
     [data-theme="dark"] .venue-neurips { background: rgba(248, 113, 113, 0.17); color: #fca5a5; }
   </style>
-  <link rel="icon" type="image/svg+xml" href="/assets/img/taiji-favicon.svg?v=20260823" />
+  <link rel="icon" href="/favicon.ico?v=20260823b" sizes="any" />
+  <link rel="shortcut icon" href="/favicon.ico?v=20260823b" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=20260823b" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=20260823b" />
 </head>
 <body>
   <div class="progress-bar" id="progressBar"></div>
