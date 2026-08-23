@@ -112,7 +112,16 @@ const service = [
 ];
 
 const openTo = [
-  { title: "Positions", muted: "Actively looking for roles related to LLM safety and interpretability" },
-  { title: "Review invitations", muted: "AI conferences, journals, and workshops" },
-  { title: "Collaborations", muted: "Research about mechanism interpretability, game theory methods, and broad topics about LLM safety." },
+  {
+    title: "Positions",
+    muted: "I am actively looking for positions related to LLM safety and interpretability, and in particular, I'm interested in developing faithful measurement tools.",
+  },
+  {
+    title: "Review invitations",
+    muted: "I am happy to serve as a reviewer for AI conferences, journals, and workshops, and welcome such invitations.",
+  },
+  {
+    title: "Collaborations",
+    muted: "I am always excited to collaborate on research in mechanistic interpretability, game-theoretic methods, and broader topics in LLM safety. Please feel free to reach out!",
+  },
 ];
