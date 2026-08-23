@@ -114,5 +114,5 @@ const service = [
 const openTo = [
   { title: "Positions", muted: "Actively looking for roles related to LLM safety and interpretability" },
   { title: "Review invitations", muted: "AI conferences, journals, and workshops" },
-  { title: "Collaborations", muted: "Research ideas around explainability, spatial data, and safer language models" },
+  { title: "Collaborations", muted: "Research about mechanism interpretability, game theory methods, and broad topics about LLM safety." },
 ];

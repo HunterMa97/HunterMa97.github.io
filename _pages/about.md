@@ -211,6 +211,13 @@ search_exclude: true
             "CS 320 (Fall 2021, Spring 2022, Fall 2022, Spring 2023)<br>CS 540 (Fall 2023)<br>CS/BMI 776 (Spring 2024, Spring 2025, Spring 2026)<br>CS 760 (Fall 2024, Fall 2025, Fall 2026)",
         },
       );
+      openTo.splice(
+        0,
+        openTo.length,
+        { title: "Positions", muted: "Actively looking for roles related to LLM safety and interpretability" },
+        { title: "Review invitations", muted: "AI conferences, journals, and workshops" },
+        { title: "Collaborations", muted: "Research about mechanism interpretability, game theory methods, and broad topics about LLM safety." },
+      );
     })();
   </script>
   <script src="/assets/landing/js/main-20260813-landing-4.js"></script>
