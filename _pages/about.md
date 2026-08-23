@@ -128,7 +128,7 @@ search_exclude: true
           <div class="after-hours-copy">
             <p class="after-hours-kicker">Life</p>
             <h2>Stories, systems, and imagined worlds</h2>
-            <p>Outside of research, I enjoy writing, game design, and watching TV series. In 2025, I finished the first book of my life: a 300,000-word novel with dozens of characters and an intricate plot, about political intrigue, human nature, and war. After I graduate, I will look for ways to share it, perhaps through self-publishing, a visual novel, or AI-generated video.</p>
+            <p>Outside of research, I enjoy writing, game design, and watching TV shows. In 2025, I finished my first book: a 300,000-word novel about political intrigue, human nature, and war. After I graduate, I plan to explore ways to share it, perhaps through self-publishing, a visual novel adaptation, or AI-generated video.</p>
           </div>
           <div class="after-hours-card">
             <span class="mono">after hours</span>
