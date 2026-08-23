@@ -9,9 +9,9 @@ search_exclude: true
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Haotian Ma - Ph.D. Student @ UW-Madison</title>
+  <title>Haotian Ma</title>
   <meta name="description" content="Haotian Ma is a Ph.D. student in Computer Science at the University of Wisconsin-Madison working on explainable AI, spatial transcriptomics, and LLM interpretability." />
-  <meta property="og:title" content="Haotian Ma - Homepage" />
+  <meta property="og:title" content="Haotian Ma" />
   <meta property="og:description" content="Explainable AI in the real world, spatial transcriptomics, and LLM interpretability." />
   <meta property="og:image" content="/assets/img/haotian_profile.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -30,7 +30,7 @@ search_exclude: true
     [data-theme="dark"] .venue-ismb { background: rgba(45, 212, 191, 0.16); color: #2dd4bf; }
     [data-theme="dark"] .venue-neurips { background: rgba(248, 113, 113, 0.17); color: #fca5a5; }
   </style>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='86'>H</text></svg>" />
+  <link rel="icon" type="image/svg+xml" href="/assets/img/taiji-favicon.svg?v=20260823" />
 </head>
 <body>
   <div class="progress-bar" id="progressBar"></div>
