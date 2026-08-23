@@ -86,13 +86,19 @@ const experience = [
     date: "2021 - 2027",
     title: "Ph.D. in Computer Science",
     org: "University of Wisconsin-Madison",
-    desc: "Advisor: Prof. Daifeng Wang. Research on explainable AI, spatial transcriptomics, and LLM interpretability.",
+    desc: "Advisor: Prof. Daifeng Wang. Research on spatial interpretations of transcriptomics data.",
+  },
+  {
+    date: "2021",
+    title: "Research Intern",
+    org: "John Hopcroft Center, Shanghai Jiao Tong University (SJTU)",
+    desc: "Advisor: Prof. Quanshi Zhang. Research on interpretable machine learning.",
   },
   {
     date: "2016 - 2021",
     title: "B.S. in Physics",
     org: "Southern University of Science and Technology (SUSTech)",
-    desc: "Supervised by Prof. Hu Xu.",
+    desc: "Supervised by Prof. Hu Xu. Explored on generative models in computational physics study.",
   },
 ];
 
