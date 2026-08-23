@@ -83,7 +83,7 @@ search_exclude: true
         </div>
         <figure class="hero-photo photo-frame reveal">
           <img src="/assets/img/haotian_profile.png" alt="Portrait of Haotian Ma" loading="eager" />
-          <figcaption>Explainable AI &middot; Spatial Transcriptomics &middot; LLM Interpretability</figcaption>
+          <figcaption>Explain features &middot; Bottom-up methods &middot; Mechanistic interpretability</figcaption>
         </figure>
       </div>
       <a href="#news" class="scroll-hint" aria-label="Scroll down"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></a>
