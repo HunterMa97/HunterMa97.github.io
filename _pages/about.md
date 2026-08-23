@@ -73,10 +73,7 @@ search_exclude: true
             My goal is to explain AI in terms of features, particularly from the bottom up. I'm focusing on theoretical tools that can build faithful representations from deep neural networks. Based on that, I aim to identify and prioritize abstract concepts, with applications to structural reasoning, computational biology, and broad scientific discovery.
           </p>
           <p class="hero-bio reveal">
-            I will keep sharing the latest progress.
-          </p>
-          <p class="hero-bio reveal">
-            More work, including blog posts, threads, and open source code, will be released together in October.
+            I will keep sharing the latest progress. More work, including blog posts, threads, and open source code, will be released together in October.
           </p>
           <div class="hero-cta reveal">
             <a href="#publications" class="btn btn-primary">View Publications</a>
