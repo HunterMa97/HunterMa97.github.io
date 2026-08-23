@@ -133,7 +133,7 @@ search_exclude: true
           <div class="after-hours-card">
             <span class="mono">after hours</span>
             <strong>writing &middot; game design &middot; TV series</strong>
-            <p>It's alsk about real people in the real world.</p>
+            <p>I enjoy creating and solving puzzles, both in and outside of research.</p>
           </div>
         </div>
       </div>
