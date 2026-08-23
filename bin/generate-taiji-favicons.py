@@ -94,9 +94,11 @@ def write_svg(path: Path) -> None:
 
 def verify_ico(path: Path) -> None:
     data = path.read_bytes()
-    if data[:4] != b"\x00\x00\x01\x00":
-        raise SystemExit(f"{path}: invalid ICO signature")
-    count = struct.unpack("<H", data[4:6])[0]
+    if len(data) < 6:
+        raise SystemExit(f"{path}: ICO too small")
+    reserved, icotype, count = struct.unpack("<HHH", data[:6])
+    if reserved != 0 or icotype != 1:
+        raise SystemExit(f"{path}: invalid ICO header")
     if count < 2:
         raise SystemExit(f"{path}: expected multiple icon sizes, got {count}")
 

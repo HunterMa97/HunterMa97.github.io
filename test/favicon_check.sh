@@ -33,19 +33,22 @@ check_url "/assets/img/favicon.ico?v=${CACHE_BUST}" 500
 check_url "/assets/img/taiji-favicon.svg?v=${CACHE_BUST}" 200
 check_url "/favicon.ico?v=${CACHE_BUST}" 500
 
-curl -fsSL "${SITE_URL}/assets/img/favicon.ico?v=${CACHE_BUST}" | python3 - <<'PY'
+ico_tmp="$(mktemp)"
+curl -fsSL "${SITE_URL}/assets/img/favicon.ico?v=${CACHE_BUST}" -o "$ico_tmp"
+python3 - "$ico_tmp" <<'PY'
 import struct
 import sys
 
-data = sys.stdin.buffer.read()
+data = open(sys.argv[1], "rb").read()
 if len(data) < 6:
     raise SystemExit("ICO too small")
-sig, count = struct.unpack("<HH", data[:4])
-if sig != 0:
-    raise SystemExit(f"bad ICO signature: {sig}")
+reserved, icotype, count = struct.unpack("<HHH", data[:6])
+if reserved != 0 or icotype != 1:
+    raise SystemExit("invalid ICO header")
 if count < 2:
     raise SystemExit(f"expected multi-size ICO, got {count} entries")
 print(f"ICO entries: {count}")
 PY
+rm -f "$ico_tmp"
 
 echo "favicon_check: all checks passed"
