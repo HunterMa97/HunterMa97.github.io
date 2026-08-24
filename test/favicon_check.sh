@@ -2,7 +2,7 @@
 set -euo pipefail
 
 SITE_URL="${SITE_URL:-https://hunterma97.github.io}"
-CACHE_BUST="${CACHE_BUST:-20260824-polaris1}"
+CACHE_BUST="${CACHE_BUST:-20260824-northstar2}"
 
 fail() {
   echo "favicon_check: $*" >&2
@@ -25,16 +25,16 @@ check_url() {
 }
 
 html="$(curl -fsSL "${SITE_URL}/")"
-echo "$html" | grep -q 'data:image/svg+xml' || fail "homepage missing inline SVG favicon"
 echo "$html" | grep -q "favicon-32.png?v=${CACHE_BUST}" || fail "homepage missing PNG favicon link"
+echo "$html" | grep -q "favicon.ico?v=${CACHE_BUST}" || fail "homepage missing ICO favicon link"
+echo "$html" | grep -q 'data:image/svg+xml' && fail "homepage still uses inline SVG favicon"
 
-check_url "/assets/img/favicon-32.png?v=${CACHE_BUST}" 200
-check_url "/assets/img/favicon.ico?v=${CACHE_BUST}" 500
-check_url "/assets/img/polaris-favicon.svg?v=${CACHE_BUST}" 200
-check_url "/favicon.ico?v=${CACHE_BUST}" 500
+check_url "/assets/img/favicon-32.png?v=${CACHE_BUST}" 2000
+check_url "/assets/img/favicon.ico?v=${CACHE_BUST}" 9000
+check_url "/favicon.ico?v=${CACHE_BUST}" 9000
 
 ico_tmp="$(mktemp)"
-curl -fsSL "${SITE_URL}/assets/img/favicon.ico?v=${CACHE_BUST}" -o "$ico_tmp"
+curl -fsSL "${SITE_URL}/favicon.ico?v=${CACHE_BUST}" -o "$ico_tmp"
 python3 - "$ico_tmp" <<'PY'
 import struct
 import sys
