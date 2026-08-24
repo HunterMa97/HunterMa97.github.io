@@ -2,7 +2,7 @@
 set -euo pipefail
 
 SITE_URL="${SITE_URL:-https://hunterma97.github.io}"
-CACHE_BUST="${CACHE_BUST:-20260824-taiji5}"
+CACHE_BUST="${CACHE_BUST:-20260824-polaris1}"
 
 fail() {
   echo "favicon_check: $*" >&2
@@ -30,7 +30,7 @@ echo "$html" | grep -q "favicon-32.png?v=${CACHE_BUST}" || fail "homepage missin
 
 check_url "/assets/img/favicon-32.png?v=${CACHE_BUST}" 200
 check_url "/assets/img/favicon.ico?v=${CACHE_BUST}" 500
-check_url "/assets/img/taiji-favicon.svg?v=${CACHE_BUST}" 200
+check_url "/assets/img/polaris-favicon.svg?v=${CACHE_BUST}" 200
 check_url "/favicon.ico?v=${CACHE_BUST}" 500
 
 ico_tmp="$(mktemp)"
