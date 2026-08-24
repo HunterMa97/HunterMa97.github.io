@@ -2,7 +2,7 @@
 set -euo pipefail
 
 SITE_URL="${SITE_URL:-https://hunterma97.github.io}"
-CACHE_BUST="${CACHE_BUST:-20260823-taiji3}"
+CACHE_BUST="${CACHE_BUST:-20260824-taiji4}"
 
 fail() {
   echo "favicon_check: $*" >&2

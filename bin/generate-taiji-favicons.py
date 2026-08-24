@@ -5,47 +5,60 @@ from __future__ import annotations
 
 import struct
 from pathlib import Path
+from urllib.parse import quote
 
 from PIL import Image, ImageDraw
 
 ROOT = Path(__file__).resolve().parents[1]
 ASSETS = ROOT / "assets" / "img"
 
+TAIJI_SVG = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <circle cx="32" cy="32" r="32" fill="#ffffff" />
+  <path d="M32 0a32 32 0 0 1 0 64 16 16 0 0 1 0-32 16 16 0 0 0 0-32z" fill="#111111" />
+  <circle cx="32" cy="16" r="5" fill="#111111" />
+  <circle cx="32" cy="48" r="5" fill="#ffffff" />
+</svg>
+"""
+
+
+def taiji_data_uri() -> str:
+    compact = " ".join(TAIJI_SVG.split())
+    return "data:image/svg+xml," + quote(compact)
+
 
 def draw_taiji(size: int) -> Image.Image:
     scale = size / 64.0
-    img = Image.new("RGBA", (size, size), (0, 0, 0, 0))
-    draw = ImageDraw.Draw(img)
-
     cx = cy = size / 2.0
-    outer_r = 30 * scale
-    stroke = max(1, round(3 * scale))
+    outer_r = 32 * scale
+    lobe_r = 16 * scale
+    dot_r = max(1, round(5 * scale))
+    black = (17, 17, 17)
+    white = (255, 255, 255)
 
     def ellipse_box(x: float, y: float, r: float) -> tuple[float, float, float, float]:
         return (x - r, y - r, x + r, y + r)
 
-    # White disk with dark outline.
-    draw.ellipse(ellipse_box(cx, cy, outer_r), fill="#ffffff", outline="#111111", width=stroke)
+    layer = Image.new("RGBA", (size, size), (0, 0, 0, 0))
+    draw = ImageDraw.Draw(layer)
 
-    # Black teardrop on the right (matches favicon.svg path).
-    teardrop = Image.new("RGBA", (size, size), (0, 0, 0, 0))
-    td = ImageDraw.Draw(teardrop)
-    td.pieslice(ellipse_box(cx, cy, outer_r), start=270, end=90, fill="#111111")
-    small_r = 15 * scale
-    td.ellipse(ellipse_box(cx, cy - 15 * scale, small_r), fill="#111111")
-    td.ellipse(ellipse_box(cx, cy + 15 * scale, small_r), fill="#ffffff")
-    img = Image.alpha_composite(img, teardrop)
+    draw.ellipse(ellipse_box(cx, cy, outer_r), fill=(*white, 255))
 
-    # Reinforce the S-curve lobes and dots for small sizes.
-    draw = ImageDraw.Draw(img)
-    draw.ellipse(ellipse_box(cx, cy - 15 * scale, small_r), fill="#ffffff", outline="#111111", width=max(1, stroke // 2))
-    draw.ellipse(ellipse_box(cx, cy + 15 * scale, small_r), fill="#111111", outline="#111111", width=max(1, stroke // 2))
+    black_layer = Image.new("RGBA", (size, size), (0, 0, 0, 0))
+    bd = ImageDraw.Draw(black_layer)
+    bd.pieslice(ellipse_box(cx, cy, outer_r), start=270, end=90, fill=(*black, 255))
+    bd.ellipse(ellipse_box(cx, cy - 16 * scale, lobe_r), fill=(*black, 255))
+    layer = Image.alpha_composite(layer, black_layer)
 
-    dot_r = max(1, round(5 * scale))
-    draw.ellipse(ellipse_box(cx, cy - 15 * scale, dot_r), fill="#111111")
-    draw.ellipse(ellipse_box(cx, cy + 15 * scale, dot_r), fill="#ffffff")
+    draw = ImageDraw.Draw(layer)
+    draw.ellipse(ellipse_box(cx, cy + 16 * scale, lobe_r), fill=(*white, 255))
+    draw.ellipse(ellipse_box(cx, cy - 16 * scale, dot_r), fill=(*black, 255))
+    draw.ellipse(ellipse_box(cx, cy + 16 * scale, dot_r), fill=(*white, 255))
 
-    return img.convert("RGB")
+    mask = Image.new("L", (size, size), 0)
+    ImageDraw.Draw(mask).ellipse(ellipse_box(cx, cy, outer_r), fill=255)
+    result = Image.new("RGB", (size, size), white)
+    result.paste(layer, mask=mask)
+    return result
 
 
 def write_png(path: Path, size: int) -> None:
@@ -78,18 +91,7 @@ def write_ico(path: Path) -> None:
 
 
 def write_svg(path: Path) -> None:
-    path.write_text(
-        """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <circle cx="32" cy="32" r="30" fill="#ffffff" stroke="#111111" stroke-width="3" />
-  <path d="M32 2a30 30 0 0 1 0 60 15 15 0 0 1 0-30 15 15 0 0 0 0-30z" fill="#111111" />
-  <circle cx="32" cy="17" r="15" fill="#ffffff" />
-  <circle cx="32" cy="47" r="15" fill="#111111" />
-  <circle cx="32" cy="17" r="5" fill="#111111" />
-  <circle cx="32" cy="47" r="5" fill="#ffffff" />
-</svg>
-""",
-        encoding="utf-8",
-    )
+    path.write_text(TAIJI_SVG.strip() + "\n", encoding="utf-8")
 
 
 def verify_ico(path: Path) -> None:
@@ -120,7 +122,9 @@ def main() -> None:
     verify_ico(ROOT / "favicon.ico")
     verify_ico(ASSETS / "favicon.ico")
 
-    print("Generated taiji favicon assets:")
+    print("Inline SVG data URI:")
+    print(taiji_data_uri())
+    print("\nGenerated taiji favicon assets:")
     for path in sorted(
         [
             ROOT / "favicon.ico",
