@@ -30,13 +30,13 @@ search_exclude: true
     [data-theme="dark"] .venue-ismb { background: rgba(45, 212, 191, 0.16); color: #2dd4bf; }
     [data-theme="dark"] .venue-neurips { background: rgba(248, 113, 113, 0.17); color: #fca5a5; }
   </style>
-  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2064%2064%22%3E%20%3Ccircle%20cx%3D%2232%22%20cy%3D%2232%22%20r%3D%2232%22%20fill%3D%22%23ffffff%22%20/%3E%20%3Cpath%20fill%3D%22%23111111%22%20d%3D%22M32%2C0%20A32%2C32%200%200%2C1%2032%2C64%20A16%2C16%200%200%2C1%2032%2C32%20A16%2C16%200%200%2C0%2032%2C0%20Z%22%20/%3E%20%3Ccircle%20cx%3D%2232%22%20cy%3D%2216%22%20r%3D%225%22%20fill%3D%22%23111111%22%20/%3E%20%3Ccircle%20cx%3D%2232%22%20cy%3D%2248%22%20r%3D%225%22%20fill%3D%22%23ffffff%22%20/%3E%20%3C/svg%3E" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png?v=20260824-taiji5" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16.png?v=20260824-taiji5" />
-  <link rel="icon" href="/assets/img/favicon.ico?v=20260824-taiji5" sizes="any" />
-  <link rel="icon" type="image/svg+xml" href="/assets/img/taiji-favicon.svg?v=20260824-taiji5" />
-  <link rel="shortcut icon" href="/favicon.ico?v=20260824-taiji5" />
-  <link rel="apple-touch-icon" href="/assets/img/favicon-180.png?v=20260824-taiji5" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2064%2064%22%3E%20%3Crect%20width%3D%2264%22%20height%3D%2264%22%20fill%3D%22%23ffffff%22%20/%3E%20%3Cpolygon%20fill%3D%22%23111111%22%20points%3D%2232%2C4%2036.5%2C23%2056%2C23%2040%2C34%2045.5%2C54%2032%2C43%2018.5%2C54%2024%2C34%208%2C23%2027.5%2C23%22%20/%3E%20%3C/svg%3E" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png?v=20260824-polaris1" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16.png?v=20260824-polaris1" />
+  <link rel="icon" href="/assets/img/favicon.ico?v=20260824-polaris1" sizes="any" />
+  <link rel="icon" type="image/svg+xml" href="/assets/img/polaris-favicon.svg?v=20260824-polaris1" />
+  <link rel="shortcut icon" href="/favicon.ico?v=20260824-polaris1" />
+  <link rel="apple-touch-icon" href="/assets/img/favicon-180.png?v=20260824-polaris1" />
 </head>
 <body>
   <div class="progress-bar" id="progressBar"></div>
