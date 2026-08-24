@@ -12,9 +12,10 @@ from PIL import Image, ImageDraw
 ROOT = Path(__file__).resolve().parents[1]
 ASSETS = ROOT / "assets" / "img"
 
+# Standard taijitu: white left + top lobe, black right + bottom lobe, no outer ring.
 TAIJI_SVG = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
   <circle cx="32" cy="32" r="32" fill="#ffffff" />
-  <path d="M32 0a32 32 0 0 1 0 64 16 16 0 0 1 0-32 16 16 0 0 0 0-32z" fill="#111111" />
+  <path fill="#111111" d="M32,0 A32,32 0 0,1 32,64 A16,16 0 0,1 32,32 A16,16 0 0,0 32,0 Z" />
   <circle cx="32" cy="16" r="5" fill="#111111" />
   <circle cx="32" cy="48" r="5" fill="#ffffff" />
 </svg>
@@ -26,39 +27,49 @@ def taiji_data_uri() -> str:
     return "data:image/svg+xml," + quote(compact)
 
 
+def _taiji_is_black(dx: float, dy: float, radius: float) -> bool:
+    lobe_r = radius / 2.0
+    if dx * dx + dy * dy > radius * radius:
+        return False
+
+    # Right half is yin (black); left half is yang (white).
+    is_black = dx > 0
+
+    # Top lobe (yang): white.
+    if dx * dx + (dy + lobe_r) * (dy + lobe_r) <= lobe_r * lobe_r:
+        is_black = False
+
+    # Bottom lobe (yin): black.
+    if dx * dx + (dy - lobe_r) * (dy - lobe_r) <= lobe_r * lobe_r:
+        is_black = True
+
+    return is_black
+
+
 def draw_taiji(size: int) -> Image.Image:
-    scale = size / 64.0
-    cx = cy = size / 2.0
-    outer_r = 32 * scale
-    lobe_r = 16 * scale
-    dot_r = max(1, round(5 * scale))
+    cx = cy = size // 2
+    radius = size / 2.0
+    lobe_r = radius / 2.0
+    dot_r = max(1, round(radius * 5.0 / 32.0))
+    lobe_offset = int(round(lobe_r))
     black = (17, 17, 17)
     white = (255, 255, 255)
 
-    def ellipse_box(x: float, y: float, r: float) -> tuple[float, float, float, float]:
-        return (x - r, y - r, x + r, y + r)
+    img = Image.new("RGB", (size, size), white)
+    px = img.load()
+    for y in range(size):
+        for x in range(size):
+            dx = x - cx
+            dy = y - cy
+            if _taiji_is_black(dx, dy, radius):
+                px[x, y] = black
 
-    layer = Image.new("RGBA", (size, size), (0, 0, 0, 0))
-    draw = ImageDraw.Draw(layer)
-
-    draw.ellipse(ellipse_box(cx, cy, outer_r), fill=(*white, 255))
-
-    black_layer = Image.new("RGBA", (size, size), (0, 0, 0, 0))
-    bd = ImageDraw.Draw(black_layer)
-    bd.pieslice(ellipse_box(cx, cy, outer_r), start=270, end=90, fill=(*black, 255))
-    bd.ellipse(ellipse_box(cx, cy - 16 * scale, lobe_r), fill=(*black, 255))
-    layer = Image.alpha_composite(layer, black_layer)
-
-    draw = ImageDraw.Draw(layer)
-    draw.ellipse(ellipse_box(cx, cy + 16 * scale, lobe_r), fill=(*white, 255))
-    draw.ellipse(ellipse_box(cx, cy - 16 * scale, dot_r), fill=(*black, 255))
-    draw.ellipse(ellipse_box(cx, cy + 16 * scale, dot_r), fill=(*white, 255))
-
-    mask = Image.new("L", (size, size), 0)
-    ImageDraw.Draw(mask).ellipse(ellipse_box(cx, cy, outer_r), fill=255)
-    result = Image.new("RGB", (size, size), white)
-    result.paste(layer, mask=mask)
-    return result
+    draw = ImageDraw.Draw(img)
+    top_y = cy - lobe_offset
+    bottom_y = cy + lobe_offset
+    draw.ellipse((cx - dot_r, top_y - dot_r, cx + dot_r, top_y + dot_r), fill=black)
+    draw.ellipse((cx - dot_r, bottom_y - dot_r, cx + dot_r, bottom_y + dot_r), fill=white)
+    return img
 
 
 def write_png(path: Path, size: int) -> None:
@@ -105,7 +116,33 @@ def verify_ico(path: Path) -> None:
         raise SystemExit(f"{path}: expected multiple icon sizes, got {count}")
 
 
+def verify_taiji_image(size: int = 64) -> None:
+    cx = cy = size // 2
+    radius = size / 2.0
+    lobe_r = radius / 2.0
+    lobe_offset = int(round(lobe_r))
+    img = draw_taiji(size)
+    px = img.load()
+    white = (255, 255, 255)
+    black = (17, 17, 17)
+
+    checks = [
+        (int(cx - radius * 0.45), cy, white, "left side should be white"),
+        (int(cx + radius * 0.45), cy, black, "right side should be black"),
+        (cx, cy - int(lobe_r * 0.65), white, "top lobe should be white"),
+        (cx, cy + int(lobe_r * 0.65), black, "bottom lobe should be black"),
+        (cx, cy - lobe_offset, black, "top dot should be black"),
+        (cx, cy + lobe_offset, white, "bottom dot should be white"),
+    ]
+    for x, y, expected, label in checks:
+        got = px[x, y]
+        if got != expected:
+            raise SystemExit(f"{label} at ({x},{y}): expected {expected}, got {got}")
+
+
 def main() -> None:
+    verify_taiji_image()
+
     ASSETS.mkdir(parents=True, exist_ok=True)
 
     write_svg(ASSETS / "taiji-favicon.svg")
