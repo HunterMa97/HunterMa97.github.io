@@ -141,8 +141,9 @@ function applyPubFilters() {
   const q = deburr(pubSearch?.value || "");
   let shown = 0;
   document.querySelectorAll(".pub-card").forEach((card) => {
-    const tags = card.dataset.tags || "";
-    const matchesFilter = activeFilter === "all" || tags.split(" ").includes(activeFilter);
+    const tags = (card.dataset.tags || "").split(" ").filter(Boolean);
+    const isHidden = tags.includes("hidden");
+    const matchesFilter = !isHidden && (activeFilter === "all" || tags.includes(activeFilter));
     const matchesSearch = !q || card.dataset.search.includes(q);
     const visible = matchesFilter && matchesSearch;
     card.hidden = !visible;
