@@ -22,7 +22,7 @@ const publications = [
     tags: ["submitted", "selected"],
     title: "SymSelect: Symmetry Alignment under Sample-Dependent Validity",
     authors: "Haotian Ma, et al.",
-    venueFull: "Submitted",
+    venueFull: "Submitted to NeurIPS 2026",
   },
   {
     year: 2026,
@@ -31,7 +31,7 @@ const publications = [
     tags: ["submitted", "selected"],
     title: "Spectral-Spatial Interpretation",
     authors: "Haotian Ma, et al.",
-    venueFull: "Submitted",
+    venueFull: "Submitted to NeurIPS 2026",
   },
   {
     year: 2026,
@@ -40,16 +40,16 @@ const publications = [
     tags: ["submitted", "selected"],
     title: "When Do Sparse Autoencoder Features Add Up? Behavioral Additivity in Language Models",
     authors: "Haotian Ma, et al.",
-    venueFull: "Submitted",
+    venueFull: "Submitted to AAAI 2027",
   },
   {
     year: 2026,
     badge: "submitted",
-    venueBadge: "AAAI",
+    venueBadge: "Submitted",
     tags: ["submitted", "selected"],
     title: "Redistribution Sensitivity of Sparse Autoencoder Representations",
     authors: "Haotian Ma, et al.",
-    venueFull: "Submitted to AAAI",
+    venueFull: "Submitted to AAAI 2027",
   },
   {
     year: 2026,
@@ -58,7 +58,7 @@ const publications = [
     tags: ["submitted"],
     title: "Compositional Gender Associations in Language Models",
     authors: "Haotian Ma, et al.",
-    venueFull: "Submitted",
+    venueFull: "Submitted to AAAI 2027",
   },
   {
     year: 2026,
@@ -67,7 +67,7 @@ const publications = [
     tags: ["submitted"],
     title: "Gender Attribution by Proxy: Restraint, Fallback, and Rationalization in LLMs",
     authors: "Haotian Ma, et al.",
-    venueFull: "Submitted",
+    venueFull: "Submitted to AAAI 2027",
   },
   {
     year: 2026,
