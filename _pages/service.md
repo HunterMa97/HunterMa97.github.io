@@ -9,4 +9,5 @@ nav_order: 2
 {% include site-custom-style.html %}
 
 - ICML 2026 Silver Reviewer.
-- Reviewer for AAAI 2027, NeurIPS 2026, ICML 2026, CVPR 2026, and related venues.
+- Journal Reviewer: IEEE Transactions on Neural Networks and Learning Systems (TNNLS), Pattern Recognition (Elsevier).
+- Conference Reviewer: AAAI 2027, NeurIPS 2026, ICML 2026, CVPR 2026, etc.

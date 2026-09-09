@@ -171,7 +171,7 @@ search_exclude: true
   <button class="back-to-top" id="backToTop" aria-label="Back to top"><svg class="btt-ring" viewBox="0 0 46 46" aria-hidden="true"><circle cx="23" cy="23" r="20"/></svg><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg></button>
   <div class="toast" id="toast">Copied to clipboard</div>
 
-  <script src="/assets/landing/js/data.js?v=20260909-submitted-venues"></script>
+  <script src="/assets/landing/js/data.js?v=20260909-journal-reviewer"></script>
   <script>
     (() => {
       const people = [
@@ -216,7 +216,8 @@ search_exclude: true
         0,
         service.length,
         { title: "Awards", muted: "ICML 2026 Silver Reviewer" },
-        { title: "Reviewer", muted: "AAAI 2027, NeurIPS 2026, ICML 2026, CVPR 2026, etc." },
+        { title: "Journal Reviewer", muted: "IEEE Transactions on Neural Networks and Learning Systems (TNNLS), Pattern Recognition (Elsevier)" },
+        { title: "Conference Reviewer", muted: "AAAI 2027, NeurIPS 2026, ICML 2026, CVPR 2026, etc." },
         {
           title: "Teaching",
           muted:
@@ -243,6 +244,6 @@ search_exclude: true
       );
     })();
   </script>
-  <script src="/assets/landing/js/main-20260813-landing-4.js?v=20260909-submitted-venues"></script>
+  <script src="/assets/landing/js/main-20260813-landing-4.js?v=20260909-journal-reviewer"></script>
 </body>
 </html>

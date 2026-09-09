@@ -158,7 +158,8 @@ const experience = [
 
 const service = [
   { title: "Awards", muted: "ICML 2026 Silver Reviewer" },
-  { title: "Reviewer", muted: "AAAI 2027, NeurIPS 2026, ICML 2026, CVPR 2026, etc." },
+  { title: "Journal Reviewer", muted: "IEEE Transactions on Neural Networks and Learning Systems (TNNLS), Pattern Recognition (Elsevier)" },
+  { title: "Conference Reviewer", muted: "AAAI 2027, NeurIPS 2026, ICML 2026, CVPR 2026, etc." },
   {
     title: "Teaching",
     muted: "CS 320 (Fall 2021, Spring 2022, Fall 2022, Spring 2023)<br>CS 540 (Fall 2023)<br>CS/BMI 776 (Spring 2024, Spring 2025, Spring 2026)<br>CS 760 (Fall 2024, Fall 2025, Fall 2026)",
